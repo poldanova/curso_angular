@@ -106,5 +106,4 @@ nav a {
     margin: 0 15px;                      /* Márgenes horizontales para separar los enlaces */
     padding: 20px;                  /* Un poco de relleno para hacer más grandes los enlaces */
     transition: background-color 0.3s ease; /* Suaviza la transición del fondo */
-    
 }
