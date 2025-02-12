@@ -1,0 +1,110 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* Estilos */
+
+body {
+    background-color: rgba(0, 0, 0, 0.868);
+    margin: 0;
+    height: 100vh; /* Asegura que el cuerpo ocupe toda la altura de la ventana */
+}
+
+.padre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+}
+
+.hijo {
+    border-radius: 15px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+    background-color: aliceblue;
+    padding: 20px;
+    margin: auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    width: 150px;
+    padding: 20px;
+    border-radius: 15px;
+    color: aliceblue;
+    background-color: rgb(13, 131, 131);
+    font-size: 20px;
+}
+
+.space {
+    margin-bottom: 18px;
+}
+
+
+nav {
+    display: flex;                      /* Usamos Flexbox */
+    justify-content: flex-start;       /* Distribuye los enlaces de forma equitativa */
+    align-items: center;                 /* Centra los enlaces verticalmente */
+    width: 100%;
+    padding: 20px;
+    background-color: aliceblue;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.868);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+nav a:hover {
+    background-color: lightblue; /* Color de fondo al pasar el ratón */
+    padding: 18px;
+}
+
+nav a {
+    text-decoration: none;               /* Elimina el subrayado de los enlaces */
+    color: inherit;                      /* Hereda el color del texto del elemento padre */
+    margin: 0 15px;                      /* Márgenes horizontales para separar los enlaces */
+    padding: 10px 15px;                  /* Un poco de relleno para hacer más grandes los enlaces */
+    transition: background-color 0.3s ease; /* Suaviza la transición del fondo */
+}
