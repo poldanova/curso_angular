@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initialscale=1.0">
+ <title>Ejercicios DOM</title>
+ <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // 1. Modificar el texto de un elemento
+      const cambiarTextoBtn = document.createElement("button");
+      cambiarTextoBtn.innerText = "Cambiar Texto";
+      cambiarTextoBtn.addEventListener("click", () => {
+        document.getElementById("miElemento").innerText = "Nuevo contenido";
+        alert("Se ha cambiado el texto del elemento.");
+      });
+      // Agregar el botón al cuerpo del documento después de que el DOM esté listo
+      document.body.appendChild(cambiarTextoBtn);
+
+      const añadirParrafo = document.createElement("p");
+      añadirParrafo.innerText = "Hola soy un parrafo";
+      alert("Hemos añadido un párrafo");
+      document.body.appendChild(añadirParrafo);
+      
+       // Crear un botón para cambiar el texto de la caja
+       const cambiarTextoCajaBtn = document.createElement("button");
+      cambiarTextoCajaBtn.innerText = "Cambiar texto de la caja";
+      cambiarTextoCajaBtn.addEventListener("click", () => {
+        // Cambiar el texto de la caja con id "miElemento"
+        const miElemento = document.getElementById("miElemento");
+        miElemento.innerText = "Texto cambiado en la caja";
+      });
+      // Agregar el botón para cambiar el texto de la caja al documento
+      document.body.appendChild(cambiarTextoCajaBtn);
+    });
+
+ </script>
+ <style>
+ body { font-family: Arial, sans-serif; margin: 20px; }
+ .caja { width: 200px; height: 100px; background-color:
+lightgray; text-align: center; line-height: 100px; margin: 10px 0; }
+ .destacada { background-color: yellow; font-weight: bold; }
+ </style>
+</head>
+<body>
+ <h1>Ejercicios de Manipulación del DOM</h1>
+ <div id="miElemento" class="caja">Elemento de prueba</div>
+ <div id="contenedor"></div>
+
+</body>
+</html>
